@@ -1,0 +1,19 @@
+<% layout("layout/boiler")%>
+
+<div class="row ">
+     
+    <div class="col-6 offset-1 mt-3">
+        <h1>Login To WonderLust</h1>
+        <form method="POST" action="/login" class="needs-validation" novalidate>
+
+            <label for="username" class="form-label">Username</label>
+            <input type="text" name="username" id="user" class="form-control" required>
+
+            <label for="password" class="form-label">Password</label>
+            <input type="password" name="password" id="password" class="form-control" required>
+
+           <button class="btn btn-success mt-3">Login</button>
+        </form>
+    </div>
+
+</div>

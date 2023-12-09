@@ -1,0 +1,112 @@
+body{
+
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+
+  }
+  .container{
+    flex:1;
+  }
+.nav-bar{
+    color:#f00;
+    font-size:30px;
+}
+
+.navbar{
+
+    background-color:#fff;
+}
+
+.nav-link{
+    color:#222222 !important;
+}
+
+/* FOOTER */
+.footer{
+
+    height:8rem;
+    background-color:#ebebeb;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:space-evenly;
+}
+.icon i{
+
+    margin:4px;
+    opacity: 0.8;
+    cursor: pointer;
+    padding-bottom: 3px;
+}
+.icon i:hover{
+    opacity:1;
+
+
+}
+.privacy-terms a{
+    margin-top:0;
+    padding-top:0;
+    text-decoration: none;
+    color: #000;
+}
+
+/* Cads */
+.card-listings{
+    border: none !important;
+    margin:8px 0px 15px 0px !important;
+
+}
+.card-img-top{
+
+    width: 100% !important;
+    border-radius: 8px !important;
+
+}
+
+.card-body{
+    padding: 5px !important;
+}
+.card-text{
+    font-weight:500;
+}
+.card-inner{
+    margin: 4px;
+}
+.listing-links{
+
+    text-decoration:none;
+}
+.card-img-overlay{
+
+    opacity: 0;
+
+}
+.card-img-overlay:hover{
+    opacity: 0.2;
+   background-color: #fff;
+}
+
+/* New form */
+.btn{
+    color:#ebebeb !important;
+    background-color:#f00 !important;
+    border:none !important;
+}
+
+/* Show listnings  */
+
+.show-btn{
+    display: flex;
+    justify-content: space-between;
+}
+.card-img{
+
+    height:40vh;
+    width:50vh;
+}
+#map{
+    height:350px;
+    width:150vh;
+}
