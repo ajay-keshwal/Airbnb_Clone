@@ -14,25 +14,89 @@
     padding:0.4rem 2.5rem 0.4rem 2.5rem;
     font-size:0.9rem;
   }
+  #header{
+      position:absolute;
+      width: 50rem;
+      left:3.5rem;
+      display: flex;
+      z-index: 10000 ;
+      justify-content: space-between;
+      top:0.5rem;
+    }
+    #input{
+      height: 2.5rem;
+      width: 24rem ;
+    }
+  @media(max-width:1000px){
+    #inp-btn{
+      margin-right:24rem;
+    }
+    #inp-btn input{
+      width:14.5rem;
+    }
+  }
+  
+    
+  @media(max-width:500px){
+    
+    #header{
+      position:absolute;
+      width: 2rem;
+      left:3.5rem;
+      display: flex;
+      z-index: 10000 ;
+      justify-content: space-between;
+      top:0.5rem;
+    }
+    #header div{
+      margin-right:1rem;
+    }
+    #header form button{
+      bottom:7rem;
+      height:2rem;
+      width:4.5rem;
+      font-size:0.55rem;
+      margin-top:0.3rem;
+      margin-right: 0;
+      font-weight: 700;
+
+    }
+    #header form input{
+      margin-top: 0.3rem;
+      height: 2rem;
+      width:8rem;
+      padding-left:0;
+      padding-left:0.5rem;
+      padding-right:0;
+      font-size:0.7rem;
+    }
+   
+  }
   
 </style>
 
 
+<div id="header">
+<div class="navbar-nav">
+  <a class="nav-link" aria-current="page" href="/listing">Explore</a>
+</div>
+<div id="inp-btn">
+<form class="d-flex ms-auto" role="search">
+  <input class="form-control me-2 search-inp" id="input" type="search" placeholder="Search destination" aria-label="Search">
+  <button class="btn btn2 btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass"></i>Search</button>
+</form>
+</div>
+</div>
     <nav class="navbar navbar-expand-md bg-body-tertiary sticky-top">
         <div class="container-fluid">
           <a class="navbar-brand " href="#"><i class="fa-regular fa-compass nav-bar"></i></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 
-            <div class="navbar-nav">
-              <a class="nav-link" aria-current="page" href="/listing">Explore</a>
-            </div>
-            <form class="d-flex ms-auto" role="search">
-              <input class="form-control me-2 search-inp" type="search" placeholder="Search destination" aria-label="Search">
-              <button class="btn btn2 btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass"></i>Search</button>
-            </form>
+
+          <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+
             <div class="navbar-nav ms-auto">
               <a class="nav-link" href="/listing/new">Airbnb your home</a>
 
