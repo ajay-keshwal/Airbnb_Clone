@@ -1,0 +1,25 @@
+<% layout("/layout/boiler") %>
+
+<div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 ">
+
+    <% for(let allData of data){ %>
+<a href="/listing/<%=allData._id%>" class=" listing-links">
+    
+        <div class="card col card-listings" >
+        <div class="card-inner">
+            <div>
+                <img src=<%=allData.image.url%> class="card-img-top" alt="image" style="height:20rem">
+            <div class="card-img-overlay"></div>
+        </div>
+
+            <div class="card-body">
+              <p class="card-text"><%=allData.title%><br/>
+              &#8377; <%= allData.price.toLocaleString('en-IN')%> / night
+              <i class="Gst-Tax">&nbsp; &nbsp; +18% GST</i>
+            </p>
+            </div>
+        </div>
+        </div>
+    </a>
+   <% } %>
+</div>
