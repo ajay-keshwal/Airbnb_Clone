@@ -16,3 +16,21 @@
     }, false);
   });
 })();
+
+        const taxSwitch = document.getElementById("flexSwitchCheckReverse");
+        taxSwitch.addEventListener("click",()=>{
+            let taxes = document.getElementsByClassName("Gst-Tax");
+
+            console.log(taxes);
+            for(tax of taxes){
+                if(tax.style.display != "inline"){
+                    
+                    tax.style.display="inline";
+                }
+                else{
+                    tax.style.display = "none";
+                }
+
+            }
+        })
+    

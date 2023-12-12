@@ -99,3 +99,10 @@ module.exports.deleteRoute = async(req,res) => {
  res.render("shows.ejs",{data});
 
 }
+
+module.exports.tranding = async (req,res) => {
+  const data = await listing.find({});
+
+  res.render("Tranding.ejs",{data});
+
+}

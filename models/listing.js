@@ -54,5 +54,7 @@ if(listing){
 }
 });
 
+
+
 const listing = mongoose.model("listing",listingSchema);
 module.exports = listing;

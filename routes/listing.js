@@ -17,7 +17,28 @@ const upload = multer({storage});
 
   
 
-  //index Rout
+  // index Rout
+  router.get("/trandings",isLoggedIn,listingController.tranding);
+
+  router.get("/Rooms",isLoggedIn,listingController.tranding);
+
+  router.get("/Iconic-cities",isLoggedIn,listingController.tranding);
+
+  router.get("/Mountains",isLoggedIn,listingController.tranding);
+
+  router.get("/Castles",isLoggedIn,listingController.tranding);
+
+  router.get("/Amazing-Pools",isLoggedIn,listingController.tranding);
+
+  router.get("/Camping",isLoggedIn,listingController.tranding);
+
+  router.get("/Farms",isLoggedIn,listingController.tranding);
+
+  router.get("/Arctic",isLoggedIn,listingController.tranding);
+
+  router.get("/Domes",isLoggedIn,listingController.tranding);
+
+  router.get("/Boats",isLoggedIn,listingController.tranding);
   
 router.route("/")
 .get(wrapAsync(listingController.index))
@@ -37,6 +58,8 @@ router.route("/:id")
   // rout Edit
 
 router.get("/:id/edit",isLoggedIn,isOwner,wrapAsync(listingController.routEdit));
+
+
   
   // rout put Update Edit
   
